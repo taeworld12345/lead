@@ -1,44 +1,68 @@
-/* Add a black background color to the top navigation bar */
+<style>
+{
+        box-sizing: border-box;
+    }
+/* Style the body */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   text-align: center;
+   background-color: ;
+    }
+/* Header*/
+.header {
+   padding: 30px;
+   text-align: center;
+   background-color: #207ce5; /* For browsers that do not support gradients */
+   background-image: linear-gradient(to bottom right,white , gold, white, red, white );
+   color: white;
+   
+    }
+/* Add a background color to the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #deaeea;
-}
-
+     background-color: #207ce5; /* For browsers that do not support gradients */
+   background-image: linear-gradient(to bottom right,white , gold, white, red, white );
+   color: white;
+    padding:14 px
+    }
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
     color: black;
+    text-shadow 2px 2px white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: line;
     font-size: 17px;
-}
-
+    }
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
-    background-color: #2196F3;
+    background-color:red ;
+    background-image: linear-gradient(to bottom right,red ,#d8d0ef ,red , #d8d0ef, red);
     color: white;
-}
-
+    }
+/* Style the "active" or current page */
+.topnav a.active {
+    background-color: gold;
+    color: red;
+    }
 /* Style the search box inside the navigation bar */
 .topnav input[type=text] {
     float: right;
     padding: 6px;
-    border: none;
+    border: 6;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
+    text-color: red;
+    background-color:gold;
+    
 }
 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
+/* When the screen is less than 500px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 500px) {
     .topnav a, .topnav input[type=text] {
         float: none;
         display: block;
@@ -48,6 +72,114 @@
         padding: 14px;
     }
     .topnav input[type=text] {
-        border: 1px solid #ccc;
+        border: 1px solid white;
     }
 }
+
+ /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+       background-color: #207ce5; /* For browsers that do not support gradients */
+   background-image: linear-gradient(to bottom right,white , red, white, gold, white );
+   color: white;
+      height: 200%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: white ;
+      color:black ;
+      padding: 15px;
+      text-color: white;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #deaeea;
+    padding: 20px;
+}
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: orchid;
+    padding: 20px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: gold;
+    width: 100%;
+    padding: 80px;
+    text-color: white;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+.col_white_amrc { color:black;}
+footer { width:100%;  background-color: #207ce5; /* For browsers that do not support gradients */
+   background-image: linear-gradient(to bottom right,white , gold, white, red, white );
+   color: white; ; min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:black; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:;}
+.footer_ul_amrc li a:hover{ color:black; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+    list-style-type:none;
+    padding:0px;
+    display:table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:gold; text-shadow: 2px 2px black; margin:0 12px;}
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#gold; border:1px solid #black;text-shadow: 2px 2px gold; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+</style>
+
