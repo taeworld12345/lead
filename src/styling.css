@@ -6,8 +6,8 @@
 body {
    font-family: Arial, Helvetica, sans-serif;
    margin: 0;
-   text-align: center;
-   background-color: ;
+   text-align: center ;
+    
     }
 /* Header*/
 .header {
@@ -85,7 +85,7 @@ body {
        background-color: #207ce5; /* For browsers that do not support gradients */
    background-image: linear-gradient(to bottom right,white , red, white, gold, white );
    color: white;
-      height: 200%;
+      height: 75%;
     }
     
     /* Set black background color, white text and some padding */
@@ -148,6 +148,14 @@ body {
         width: 100%;
     }
 }
+
+.body2 {
+list-style-position: inside;
+text-size: 25px;
+}
+
+
+
 .col_white_amrc { color:black;}
 footer { width:100%;  background-color: #207ce5; /* For browsers that do not support gradients */
    background-image: linear-gradient(to bottom right,white , gold, white, red, white );
